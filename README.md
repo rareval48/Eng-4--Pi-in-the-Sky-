@@ -14,6 +14,7 @@
 
 ## Initial Design
 Our initial plan is to make a nuke shaped device that wil be launched and hold/ protect the ascent and decent of the rasberry pi.
+
 <img src="https://user-images.githubusercontent.com/71342195/204313376-51ca5328-9db9-49df-b2a6-f57427667dd3.png" width="300px">
 
 # Onshape Design
