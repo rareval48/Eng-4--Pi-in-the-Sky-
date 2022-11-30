@@ -17,7 +17,7 @@ Our initial plan is to make a nuke shaped device that wil be launched and hold/ 
 
 <img src="https://user-images.githubusercontent.com/71342195/204313376-51ca5328-9db9-49df-b2a6-f57427667dd3.png" width="300px">
 
-# Onshape Design
+# Onshape_Design
 Our onshape design is somewhat different from our drawing design as we desided to make it more similar to a missle.
 Here is a reference picture and the actual design of the missile that we are creating.
 
