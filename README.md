@@ -3,7 +3,7 @@
 # Table of Contents
 
 * [Planning](#Planning)
-* [Planning](#Planning)
+* [Onshape Design](#Onshape_Design)
 * [Planning](#Planning)
 * [Planning](#Planning)
 
