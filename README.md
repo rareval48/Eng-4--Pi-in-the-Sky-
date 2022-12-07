@@ -2,15 +2,14 @@
 
 # Table of Contents
 
-* [Designing](#Designing)
+* [Designing/Planning](#Designing/Planning)
 * [](#)
 * [](#)
-* [Planning](#Planning)
 
 
 
 
-# Designing
+# Designing/Planning
 
 ## Initial Design
 Our initial plan is to make a nuke shaped device that wil be launched and protect the ascent and decent of the rasberry pi. We also ended up making a onshape design so that we were able to compare it to all the components that we needed.
