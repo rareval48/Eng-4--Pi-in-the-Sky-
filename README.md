@@ -5,8 +5,6 @@
 * [Schedule](#Schedule)
 * [Designing](#Designing)
 * [Functionablility and Materials](#Functionablility_and_Materials)
-* [](#)
-
 
 # Schedule
 We must follow the scedule to a t for us to complete this by the end of the school year.
