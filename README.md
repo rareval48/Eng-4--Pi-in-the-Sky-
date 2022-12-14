@@ -31,7 +31,7 @@ Here is our reference for a drone next to our initial design for our drone:
 # Functionablility_and_Materials
 
 ## Functionability
-Our plan to control this drone is to just let all of the motors go at full speed till we reach a certain height then turn them off. If we have time then we can change it so that they slowly reduce the rpm and eventually turn off but first we have to make the drone work.
+Our plan to control this drone is to just let all of the motors go at full speed till we reach a certain height then turn them off. If we have time then we can change it so that mototrs rpm is slowly reduced and eventually turn off but first we have to make the drone work.
 
 ## Materials
 Some of the materials and supplies that we need are easy to ge as we have them here in the lab. The other supplies would need to be ordered. Here is a list of all of our supplies include: 4 dc coreless motors, circuitboard, accelerometer (MPU6050), battery pack, altimeter (MPL3115A2), GPS module, 2 H-bridges, a powerboost, and 3d printed/lasercut supplies. We would need to buy 4 dc motors, a 1300 mAh battery, and a GPS module. As those are the only things that we dont have in the lab.
