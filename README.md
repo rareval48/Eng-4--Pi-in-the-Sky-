@@ -21,7 +21,7 @@ Initial design and reference picture:
 <img src="https://user-images.githubusercontent.com/71342195/204313376-51ca5328-9db9-49df-b2a6-f57427667dd3.png" width="300px"><img src="https://user-images.githubusercontent.com/71342195/204315696-83aefc91-d7c2-400f-9384-0ba7efb19afa.png" width="200px"><img src="https://user-images.githubusercontent.com/71342195/204319456-e632d12b-2841-421b-b828-0732915cac08.png" width="400px">
 
 ## ReDesign
-We ended up changing our design to a drone. As we are able to make our own circuitboard and we wold be able to cut down on weight. It would also cut down on materials used as there was an excess use of ABP.
+We ended up changing our design to a drone. As we are able to make our own circuitboard and we would be able to cut down on weight. It would also cut down on materials used as there was an excess use of ABP.
 Here is our reference for a drone next to our initial design for our drone:
 
 <img src="https://user-images.githubusercontent.com/71342195/204837447-9a0223bd-9544-4fe0-9009-91eb4449f9eb.png" width="400px"><img src="https://user-images.githubusercontent.com/71342195/206731486-579a0617-027c-4520-9d6a-464589515d7d.png" width="400px">
