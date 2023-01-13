@@ -115,7 +115,7 @@ Some of the materials and supplies that we need are easy to ge as we have them h
 # Weekly_Progress
 
 ## Week 1/9-1/13
-This week we ended up redesinging our drone again. Picture provided below. Another big thing that i started working on is wiring the parts to see if the coide will work. A most of the code that I have already was copy and pasted from other working projects, its easier to do that then rewrite code that you dont know for certain that it works.
+This week we ended up redesinging our drone again. Picture provided below. Another big thing that i started working on is wiring the parts to see if the coide will work. Most of the code that I have already was copy and pasted from my other working projects, its easier to do that then rewrite code that you dont know for certain that it works.
 
 <img src="https://user-images.githubusercontent.com/71342195/212105444-89988bfd-3ccd-4660-9d69-df616c82ad5c.png" width="400px">
 
