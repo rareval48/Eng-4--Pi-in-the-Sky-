@@ -122,6 +122,9 @@ This week we ended up redesinging our drone again. Picture provided below. Anoth
 ## Week 1/17-1/20
 A four day week really didnt help on our progress as we lost a day that we counld be working. But the days that we were here Spencer re laser cut parts of our drone that were susceptible to breaking from small drops. I've been trying to find information on how to store data on the Raspberry Pi Pico for most of the week.
 
-## Week 1/24-27
+## Week 1/24-1/27
 There hasnt been much progress finnding code for writing, storing, and finding data on the Pico. Stil looking for instructions on how to do that. But Spencer finally perfected the drones stability after multiple lasercuts and hopefully it wont break in the future. 
+
+## Week 1/30-2/3
+We finished soldering all the connections to the board. We also made sure that all connectiuons that we did were in the right position so we didnt have to go back and redo them. The drone motors arrived. So we are waiting for the motor holders to finish printing so that we can finish connecting the motors.
 
