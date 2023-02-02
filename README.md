@@ -115,16 +115,16 @@ Some of the materials and supplies that we need are easy to ge as we have them h
 # Weekly_Progress
 
 ## Week 1/9-1/13
-This week we ended up redesinging our drone again. Picture provided below. Another big thing that i started working on is wiring the parts to see if the coide will work. Most of the code that I have already was copy and pasted from my other working projects, its easier to do that then rewrite code that you dont know for certain that it works.
+This week we ended up redesigning our drone again. Picture provided below. Another big thing that we started working on is wiring the parts to see if the code will work. Most of the code that I have already was copy and pasted from my other working projects, its easier to do that then rewrite code, so you know for certain that it works.
 
 <img src="https://user-images.githubusercontent.com/71342195/212105444-89988bfd-3ccd-4660-9d69-df616c82ad5c.png" width="400px">
 
 ## Week 1/17-1/20
-A four day week really didnt help on our progress as we lost a day that we counld be working. But the days that we were here Spencer re laser cut parts of our drone that were susceptible to breaking from small drops. I've been trying to find information on how to store data on the Raspberry Pi Pico for most of the week.
+A four day week really didnt help on our progress as we lost a day that we counld be working. But the days that we were here Spencer re laser cut parts of our drone that were susceptible to breaking from small drops. I've been trying to find information on how to store data on the Raspberry Pi Pico for most of the week. 
 
 ## Week 1/24-1/27
-There hasnt been much progress finnding code for writing, storing, and finding data on the Pico. Stil looking for instructions on how to do that. But Spencer finally perfected the drones stability after multiple lasercuts and hopefully it wont break in the future. 
+There hasnt been much progress finnding code for writing, storing, and finding data on the Pico. Stil looking for instructions on how to do that. But Spencer finally perfected the drones stability after multiple lasercuts and hopefully it wont break in the future. . 
 
 ## Week 1/30-2/3
 We finished soldering all the connections to the board. We also made sure that all connectiuons that we did were in the right position so we didnt have to go back and redo them. The drone motors arrived. So we are waiting for the motor holders to finish printing so that we can finish connecting the motors.
-
+At the end of the week we finished wiring and soldering wires and making sure the connections wouldnt break. We alos had to do some modifications to the feet of the drone. As they hold the motors and the holes are to big for the motors.
