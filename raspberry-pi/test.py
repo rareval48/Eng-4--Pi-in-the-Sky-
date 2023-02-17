@@ -1,1 +1,20 @@
+#type: ignore
+import adafruit_mpu6050 as imu
+import busio
+import board
+import time
 
+sdaPin = board.GP2  # defining the SDA & SCL pins to use
+sclPin = board.GP3
+i2c = busio.I2C(sclPin, sdaPin)
+mpu = imu.MPU6050(i2c) 
+
+while True:
+
+    accelerationVals = mpu.acceleration
+    
+    print(f"X acceleration: {accelerationVals[0]} m/s2")
+    print(f"Y acceleration: {accelerationVals[1]} m/s2")
+    print(f"Z acceleration: {accelerationVals[2]} m/s2")
+    print("")
+    time.sleep(.1)

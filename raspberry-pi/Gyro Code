@@ -1,52 +1,15 @@
-# type: ignore
-
-from operator import truediv
+#type: ignore
 import adafruit_mpu6050 as imu
 import busio
 import board
 import time
-import pulseio
 
-
-
-sdaPin = board.GP6  # defining the SDA & SCL pins to use
-sclPin = board.GP7
+sdaPin = board.GP2  # defining the SDA & SCL pins to use
+sclPin = board.GP3
 i2c = busio.I2C(sclPin, sdaPin)
 mpu = imu.MPU6050(i2c) 
 
-motor1 = pulseio.PWMOut(board.GP2, frequency=1000, duty_cycle=0)
-motor2 = pulseio.PWMOut(board.GP3, frequency=1000, duty_cycle=0)
-motor3 = pulseio.PWMOut(board.GP4, frequency=1000, duty_cycle=0)
-motor4 = pulseio.PWMOut(board.GP5, frequency=1000, duty_cycle=0)
-
-#set motor speed
-def set_motor_speeds(m1, m2, m3, m4):
-    motor1.duty_cycle = m1
-    motor2.duty_cycle = m2
-    motor3.duty_cycle = m3
-    motor4.duty_cycle = m4
-
-#get acceleration from accelerometer
-def get_acceleration():
-    x, y, z = accel.acceleration
-    return x, y, z
-
-
-
 while True:
-    x, y, z = get_acceleration()
-
-    #adjust motor speeds based on acceleration
-    motor1_speed = -x
-    motor2_speed = -y
-    motor3_speed = z
-    motor4_speed = -z
-
-    #set motor speeds
-    set_motor_speeds(motor1_speed, motor2_speed, motor3_speed, motor4_speed)
-
-    #wait
-    time.sleep(.1)
 
     accelerationVals = mpu.acceleration
     
