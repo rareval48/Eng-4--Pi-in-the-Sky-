@@ -26,7 +26,7 @@ If needed after the due date we will have emergency project work time if we didn
 # Designing
 
 ## Initial Design
-Our initial plan is to make a nuke shaped device that wil be launched and protect the ascent and decent of the rasberry pi. We also ended up making a onshape design so that we were able to compare it to all the components that we needed.
+Our initial plan is to make a nuke shaped device that wil be launched and protect the ascent and decent of the raspberry pi. We also ended up making a onshape design so that we were able to compare it to all the components that we needed.
 Initial design and reference picture:
 
 <img src="https://user-images.githubusercontent.com/71342195/204313376-51ca5328-9db9-49df-b2a6-f57427667dd3.png" width="300px"><img src="https://user-images.githubusercontent.com/71342195/204315696-83aefc91-d7c2-400f-9384-0ba7efb19afa.png" width="200px"><img src="https://user-images.githubusercontent.com/71342195/204319456-e632d12b-2841-421b-b828-0732915cac08.png" width="400px">
@@ -46,54 +46,44 @@ Example of initial code:
 
 ```python
 # type: ignore
-
-from operator import truediv
 import adafruit_mpu6050 as imu
 import busio
 import board
 import time
 import pulseio
+from pwmio import PWMOut
+from digitalio import DigitalInOut, Direction, Pull
+from adafruit_motor import motor as Motor
 
-
-
-sdaPin = board.GP6  # defining the SDA & SCL pins to use
-sclPin = board.GP7
-i2c = busio.I2C(sclPin, sdaPin)
+sdaPin = board.GP2  # defining the SDA & SCL pins to use
+sclPin = board.GP3
+i2c = busio.I2C(sdaPin, sclPin)
 mpu = imu.MPU6050(i2c) 
 
-motor1 = pulseio.PWMOut(board.GP2, frequency=1000, duty_cycle=0)
-motor2 = pulseio.PWMOut(board.GP3, frequency=1000, duty_cycle=0)
-motor3 = pulseio.PWMOut(board.GP4, frequency=1000, duty_cycle=0)
-motor4 = pulseio.PWMOut(board.GP5, frequency=1000, duty_cycle=0)
+reverse_ain1 = PWMOut(board.GP8, frequency=50)
+reverse_ain2 = PWMOut(board.GP9, frequency=50)
+reverse_bin1 = PWMOut(board.GP11, frequency=50)
+reverse_bin2 = PWMOut(board.GP10, frequency=50)
 
-#set motor speed
-def set_motor_speeds(m1, m2, m3, m4):
-    motor1.duty_cycle = m1
-    motor2.duty_cycle = m2
-    motor3.duty_cycle = m3
-    motor4.duty_cycle = m4
-
-#get acceleration from accelerometer
-def get_acceleration():
-    x, y, z = accel.acceleration
-    return x, y, z
+forward_ain1 = PWMOut(board.GP12, frequency=50)
+forward_ain2 = PWMOut(board.GP13, frequency=50)
+forward_bin1 = PWMOut(board.GP14, frequency=50)
+forward_bin2 = PWMOut(board.GP15, frequency=50)
 
 
+motor_a = Motor.DCMotor(forward_ain1, forward_ain2)
+motor_b = Motor.DCMotor(forward_bin1, forward_bin2)
+motor_c = Motor.DCMotor(reverse_ain1, reverse_ain2)
+motor_d = Motor.DCMotor(reverse_bin1, reverse_bin2)
+
+def basic_operations():  # Drive forward at full throttle
+    motor_a.throttle = 1.0
+    motor_b.throttle = 1.0
+    motor_c.throttle = 1.0
+    motor_d.throttle = 1.0
 
 while True:
-    x, y, z = get_acceleration()
-
-    #adjust motor speeds based on acceleration
-    motor1_speed = -x
-    motor2_speed = -y
-    motor3_speed = z
-    motor4_speed = -z
-
-    #set motor speeds
-    set_motor_speeds(motor1_speed, motor2_speed, motor3_speed, motor4_speed)
-
-    #wait
-    time.sleep(.1)
+    basic_operations() 
 
     accelerationVals = mpu.acceleration
     
