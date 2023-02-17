@@ -128,3 +128,17 @@ There hasnt been much progress finnding code for writing, storing, and finding d
 ## Week 1/30-2/3
 We finished soldering all the connections to the board. We also made sure that all connectiuons that we did were in the right position so we didnt have to go back and redo them. The drone motors arrived. So we are waiting for the motor holders to finish printing so that we can finish connecting the motors.
 At the end of the week we finished wiring and soldering wires and making sure the connections wouldnt break. We alos had to do some modifications to the feet of the drone. As they hold the motors and the holes are to big for the motors.
+
+## Week 2/6-2/10
+We finished soldering and realized that the code wouldnt work, so we found out that the the pins for the SDA and SCL were soldered switched on the board. We also had to reprint the drone to cut down on weight and the bottom broke, so it was essential that we fixed this before anything else.
+
+<img src="https://user-images.githubusercontent.com/71342195/219695007-0a3584ba-20c4-4939-86a7-fe209d7ba3c0.png" width="400px">
+
+## Week 2/13-2/17
+For our project we are making a drone, as well as a couple of other groups. One of the groups is farther ahead and found out that the battery doesnt put out enough amps for the drone to take off. So we have to add some transisters for the drone to take off as the new battery would fry the h-bridges if we tried to use it.
+
+Wiring diagram:
+
+<img src="https://user-images.githubusercontent.com/71342195/219696356-3a3c486c-faac-4738-a780-41d5bb058faa.png" width="400px">
+
+
