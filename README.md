@@ -132,6 +132,4 @@ Wiring diagram:
 <img src="https://user-images.githubusercontent.com/71342195/219696356-3a3c486c-faac-4738-a780-41d5bb058faa.png" width="400px">
 
 ## Week 2/20-2/24
-
-
-
+We finished our initial code and learned that we have to use a Tello battery so that all 4 motors. We also started redesigning our drone body as our current one was really heavy and 3d prining a redesign would help the drone lift off and the acceleration and deacceleration of the drone.
