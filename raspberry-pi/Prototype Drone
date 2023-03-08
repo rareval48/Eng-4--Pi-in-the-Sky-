@@ -1,0 +1,50 @@
+#type: ignore
+import adafruit_mpu6050 as imu
+import board
+import time
+import busio
+import pwmio
+
+sda_pin = board.GP4
+scl_pin = board.GP5
+i2c = busio.I2C(scl_pin, sda_pin)
+mpu = imu.MPU6050(i2c, address = 0x68)
+
+FREQ = 1000
+
+motor1_f = pwmio.PWMOut(board.GP18, frequency=FREQ)
+motor2_f = pwmio.PWMOut(board.GP19, frequency=FREQ)
+motor3_r = pwmio.PWMOut(board.GP20, frequency=FREQ)
+motor4_r = pwmio.PWMOut(board.GP22, frequency=FREQ)
+
+while True:
+    print(f"X acceleration: {mpu.acceleration[0]} m/s2") #print XYZ vals
+    print(f"Y acceleration: {mpu.acceleration[1]} m/s2")
+    print(f"Z acceleration: {mpu.acceleration[2]} m/s2")
+    print("")
+    time.sleep(.1)
+
+    if mpu.acceleration[0] <= 1: 
+        print("Level")
+        motor1_f.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535
+        motor4_r.duty_cycle = 65535
+    
+    if mpu.acceleration[0] >= 1: 
+        print("Tilting Right")
+        motor1_f.duty_cycle = 65535 // 2
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535 // 2
+        motor4_r.duty_cycle = 65535
+
+    if mpu.acceleration[0] >= -1: 
+        print("Level")
+        motor1_f.duty_cycle = 65535 // 4
+        motor2_f.duty_cycle = 65535 // 4
+        motor3_r.duty_cycle = 65535 // 2
+        motor4_r.duty_cycle = 65535
+           
+    
+
+    
