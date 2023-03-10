@@ -133,3 +133,9 @@ Wiring diagram:
 
 ## Week 2/20-2/24
 We finished our initial code and learned that we have to use a Tello battery so that all 4 motors. We also started redesigning our drone body as our current one was really heavy and 3d prining a redesign would help the drone lift off and the acceleration and deacceleration of the drone.
+
+## Week 2/27-3/3
+We didnt really do much besides keep redesigning our drone and making our code work together. One big thing we learned was for turning on our drone motors with an (if) statement we need a print("") statement to make sure that the loop keeps looping.
+
+## Week 3/6-3/10
+We finished designing our drone and are 3d printing it out.
