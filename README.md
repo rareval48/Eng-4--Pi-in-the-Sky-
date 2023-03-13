@@ -139,3 +139,6 @@ We didnt really do much besides keep redesigning our drone and making our code w
 
 ## Week 3/6-3/10
 We finished designing our drone and are 3d printing it out. We have also had some problems with VSCode and the run button not working properly. We also ran into problems with the pico connecting to the computer.
+
+<img src="https://user-images.githubusercontent.com/71342195/224726724-63f23845-b767-4141-8475-70b03d2afd4e.png" width="400px">
+
