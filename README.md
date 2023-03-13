@@ -138,4 +138,4 @@ We finished our initial code and learned that we have to use a Tello battery so 
 We didnt really do much besides keep redesigning our drone and making our code work together. One big thing we learned was for turning on our drone motors with an (if) statement we need a print("") statement to make sure that the loop keeps looping.
 
 ## Week 3/6-3/10
-We finished designing our drone and are 3d printing it out.
+We finished designing our drone and are 3d printing it out. We have also had some problems with VSCode and the run button not working properly. We also ran into problems with the pico connecting to the computer.
