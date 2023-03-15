@@ -24,16 +24,14 @@ while True:
     time.sleep(.1)
     
     if mpu.acceleration[0] >= 1: 
-        print("Tilting Right")
-
-    if mpu.acceleration[0] >= -1: 
-        print("Tilting Left")
-    
-    if mpu.acceleration[1] <= -1: 
         print("Tilting Back")
 
-    if mpu.acceleration[1] >= 1: 
+    if mpu.acceleration[0] <= -1: 
         print("Tilting Forward")
     
-    else:
-        print("Level")
+    if mpu.acceleration[1] <= -1: 
+        print("Tilting Left")
+
+    if mpu.acceleration[1] >= 1: 
+        print("Tilting Right")
+    

@@ -1,10 +1,22 @@
 #type: ignore
-from time import sleep
-import pulseio
+import adafruit_mpu6050 as imu
 import board
-from digitalio import DigitalInOut, Direction, Pull
+import time
+import busio
+import pwmio
 
-motor1 = pulseio.PWMOut(board.GP0, frequency=1000, duty_cycle=0)
+sda_pin = board.GP2
+scl_pin = board.GP3
+i2c = busio.I2C(scl_pin, sda_pin)
+mpu = imu.MPU6050(i2c, address = 0x68)
 
-while True:
-    motor1.throttle = .5
+FREQ = 1000
+
+motor1_f = pwmio.PWMOut(board.GP18, frequency=FREQ)
+motor2_f = pwmio.PWMOut(board.GP19, frequency=FREQ)
+motor3_r = pwmio.PWMOut(board.GP20, frequency=FREQ)
+motor4_r = pwmio.PWMOut(board.GP21, frequency=FREQ)
+
+
+motor1_f.duty_cycle = 65535 // 2
+        motor2_f.duty_cycle = 65535
