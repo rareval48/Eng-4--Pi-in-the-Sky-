@@ -142,3 +142,8 @@ We finished designing our drone and are 3d printing it out. We have also had som
 
 <img src="https://user-images.githubusercontent.com/71342195/224726724-63f23845-b767-4141-8475-70b03d2afd4e.png" width="400px">
 
+## Week 3/13-3/17
+We learned that any other mosfet besides IRLB8721 cannot control the current the drone needs to fly. Fortunately we found some more and were able to make more power on the motors.
+
+## Week 3/20-3/24 
+SPENCER BROKE THE DRONE. We have to reprint with better structures for support to make sure taht the drone doesnt break again. We also edited the diameter for the motor holes. As there was to much room for the drone motors.
