@@ -133,3 +133,102 @@ Wiring diagram:
 
 ## Week 2/20-2/24
 We finished our initial code and learned that we have to use a Tello battery so that all 4 motors. We also started redesigning our drone body as our current one was really heavy and 3d prining a redesign would help the drone lift off and the acceleration and deacceleration of the drone.
+
+## Week 2/27-3/3
+We didnt really do much besides keep redesigning our drone and making our code work together. One big thing we learned was for turning on our drone motors with an (if) statement we need a print("") statement to make sure that the loop keeps looping.
+
+## Week 3/6-3/10
+We finished designing our drone and are 3d printing it out. We have also had some problems with VSCode and the run button not working properly. We also ran into problems with the pico connecting to the computer.
+
+<img src="https://user-images.githubusercontent.com/71342195/224726724-63f23845-b767-4141-8475-70b03d2afd4e.png" width="400px">
+
+## Week 3/13-3/17
+We learned that any other mosfet besides IRLB8721 cannot control the current the drone needs to fly. Fortunately we found some more and were able to make more power on the motors.
+
+## Week 3/20-3/24 
+SPENCER BROKE THE DRONE. We have to reprint with better structures for support to make sure taht the drone doesnt break again. We also edited the diameter for the motor holes. As there was to much room for the drone motors. We also have a basic code setup for the drone to use without transistors. 
+Example Below:
+
+```python
+#type: ignore
+import adafruit_mpu6050 as imu
+import board
+import time
+import busio
+import pwmio
+
+sda_pin = board.GP4
+scl_pin = board.GP5
+i2c = busio.I2C(scl_pin, sda_pin)
+mpu = imu.MPU6050(i2c, address = 0x68)
+
+CraigJr = 100
+
+motor1_r = pwmio.PWMOut(board.GP17, frequency=CraigJr)
+motor2_f = pwmio.PWMOut(board.GP18, frequency=CraigJr)
+motor3_r = pwmio.PWMOut(board.GP19, frequency=CraigJr)
+motor4_f = pwmio.PWMOut(board.GP20, frequency=CraigJr)
+while True:
+
+    print(f"X: {mpu.acceleration[0]} m/s2") #print XYZ vals
+    print(f"Y: {mpu.acceleration[1]} m/s2")
+    print(f"Z: {mpu.acceleration[2]} m/s2")
+    print("")
+    time.sleep(.1)
+
+    if mpu.acceleration[0] >= 1: 
+        print("Tilting Back")
+        motor1_r.duty_cycle = 65535 // 2
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535 // 2
+        motor4_f.duty_cycle = 65535
+
+    else:
+        print("Level")
+        motor1_r.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535
+    
+    if mpu.acceleration[0] <= -1: 
+        print("Tilting Forward")
+        motor1_r.duty_cycle = 65535 
+        motor2_f.duty_cycle = 65535 // 2 
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535 // 2
+
+    else:
+        print("Level")
+        motor1_r.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535
+
+    if mpu.acceleration[1] <= -1: 
+        print("Tilting left")
+        motor1_r.duty_cycle = 65535 // 2
+        motor2_f.duty_cycle = 65535 // 2
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535
+
+    else:
+        print("Level")
+        motor1_r.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535
+
+    if mpu.acceleration[1] >= 1: 
+        print("Tilting right")
+        motor1_r.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535 // 2
+        motor4_f.duty_cycle = 65535 // 2
+
+    else:
+        print("Level")
+        motor1_r.duty_cycle = 65535
+        motor2_f.duty_cycle = 65535
+        motor3_r.duty_cycle = 65535
+        motor4_f.duty_cycle = 65535
+```
