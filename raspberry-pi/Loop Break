@@ -1,0 +1,32 @@
+
+
+#type: ignore
+import board
+import pwmio
+
+FRED = 100
+
+motor1_r = pwmio.PWMOut(board.GP17, frequency=FRED)
+motor2_f = pwmio.PWMOut(board.GP18, frequency=FRED)
+motor3_r = pwmio.PWMOut(board.GP19, frequency=FRED)
+motor4_f = pwmio.PWMOut(board.GP20, frequency=FRED)
+
+
+while True:
+
+    motor1_r.duty_cycle = 65535
+    motor2_f.duty_cycle = 65535
+    motor3_r.duty_cycle = 65535
+    motor4_f.duty_cycle = 65535
+
+    for i in range(100):
+        print(i)
+        if i == 10:
+            break
+        print('Loop exited')
+
+    if break:
+        motor1_r.duty_cycle = 65535 // 4
+        motor2_f.duty_cycle = 65535 // 4
+        motor3_r.duty_cycle = 65535 // 4
+        motor4_f.duty_cycle = 65535 // 4

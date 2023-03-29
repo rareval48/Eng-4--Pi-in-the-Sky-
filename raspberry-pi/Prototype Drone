@@ -10,14 +10,12 @@ scl_pin = board.GP5
 i2c = busio.I2C(scl_pin, sda_pin)
 mpu = imu.MPU6050(i2c, address = 0x68)
 
-FREQ = 1000
+FRED = 100
 
-motor1_r = pwmio.PWMOut(board.GP18, frequency=FREQ)
-motor2_f = pwmio.PWMOut(board.GP19, frequency=FREQ)
-motor3_r = pwmio.PWMOut(board.GP20, frequency=FREQ)
-motor4_f = pwmio.PWMOut(board.GP21, frequency=FREQ)
-
-
+motor1_r = pwmio.PWMOut(board.GP17, frequency=FRED)
+motor2_f = pwmio.PWMOut(board.GP18, frequency=FRED)
+motor3_r = pwmio.PWMOut(board.GP19, frequency=FRED)
+motor4_f = pwmio.PWMOut(board.GP20, frequency=FRED)
 while True:
 
     print(f"X: {mpu.acceleration[0]} m/s2") #print XYZ vals
@@ -81,4 +79,3 @@ while True:
         motor2_f.duty_cycle = 65535
         motor3_r.duty_cycle = 65535
         motor4_f.duty_cycle = 65535
-
