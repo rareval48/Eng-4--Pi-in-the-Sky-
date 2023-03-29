@@ -232,3 +232,8 @@ while True:
         motor3_r.duty_cycle = 65535
         motor4_f.duty_cycle = 65535
 ```
+
+## Week 3/27-3/30
+Our drone is coming together really well. Here is a progress photo.
+
+<img src="https://user-images.githubusercontent.com/71342195/228573203-8aea49ba-d59e-4102-983b-83c445132d9e.jpg" width="500px">
