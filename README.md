@@ -234,6 +234,6 @@ while True:
 ```
 
 ## Week 3/27-3/30
-Our drone is coming together really well. Here is a progress photo.
+Our drone is coming together really well. Here is a progress photo. I did accidentally fry a board, while wiring the board I didnt cover the connections that connected the battery to the motors, so I think by not covering those connections they touched the board and added voltage to a component to something that didnt need voltage.
 
 <img src="https://user-images.githubusercontent.com/71342195/228573203-8aea49ba-d59e-4102-983b-83c445132d9e.jpg" width="500px">
