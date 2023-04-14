@@ -8,7 +8,7 @@
 * [Weekly Progress](#Weekly_Progress)
 
 # Schedule
-We must follow the schedule to a t for us to complete this by the end of the school year. WE first start working on our project just after Christmas break. 
+We must follow the schedule to a t for us to complete this by the end of the school year. We first start working on our project just after Christmas break. 
 
 From Janurary to End of Q2 - We finish initial CAD and code
 
