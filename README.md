@@ -8,7 +8,7 @@
 * [Weekly Progress](#Weekly_Progress)
 
 # Schedule
-We must follow the schedule to a t for us to complete this by the end of the school year. WE first start working on our project just after Christmas break. 
+We must follow the schedule to a t for us to complete this by the end of the school year. We first start working on our project just after Christmas break. 
 
 From Janurary to End of Q2 - We finish initial CAD and code
 
@@ -232,3 +232,15 @@ while True:
         motor3_r.duty_cycle = 65535
         motor4_f.duty_cycle = 65535
 ```
+
+## Week 3/27-3/30
+Our drone is coming together really well. Here is a progress photo. I did accidentally fry a board, while wiring the board I didnt cover the connections that connected the battery to the motors, so I think by not covering those connections they touched the board and added voltage to a component to something that didnt need voltage.
+
+<img src="https://user-images.githubusercontent.com/71342195/228573203-8aea49ba-d59e-4102-983b-83c445132d9e.jpg" width="500px">
+
+## Week 4/3-4/7
+Spring Break
+
+## Week 4/10-4/14
+One of our motors broke and we had to ask one of the other drone groups for an extra motor as we didnt have an extra motor that we could use. So we had to remove and resolder the new motor onto the drone.
+
