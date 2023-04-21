@@ -244,3 +244,8 @@ Spring Break
 ## Week 4/10-4/14
 One of our motors broke and we had to ask one of the other drone groups for an extra motor as we didnt have an extra motor that we could use. So we had to remove and resolder the new motor onto the drone.
 
+## Week 4/17-4/21
+We've been working on our code all week and we got it the drone running. I also have been trying to make sure that the pico can collect data and make sure that we are completing the rubric for this project. A little helpful advice for the data logger would be to put the "boot.py" code in the actual CIRCUITPY drive and not on VSCode. As it wouldnt actually work and collect data and log it.
+
+
+
