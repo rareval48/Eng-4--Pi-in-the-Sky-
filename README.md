@@ -249,3 +249,5 @@ We've been working on our code all week and we got it the drone running. I also 
 
 "Week 43331431334341 eee doid" This is Spencers only part of the github that he helped on.
 
+## Week 4/24-4/28
+We did some fly testing. We're gonna try to use elastic strings because it might be cool.
