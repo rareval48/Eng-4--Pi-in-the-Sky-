@@ -249,3 +249,6 @@ We've been working on our code all week and we got it the drone running. I also 
 
 ## Week 4/24-4/28
 We did some fly testing. We're gonna try to use elastic strings because it might be cool. 
+
+## Week 5/1-5/5
+This week we gonjna test outside because we think we are ready to. It probably wont fly but maybe it will idk.
