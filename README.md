@@ -244,3 +244,15 @@ Spring Break
 ## Week 4/10-4/14
 One of our motors broke and we had to ask one of the other drone groups for an extra motor as we didnt have an extra motor that we could use. So we had to remove and resolder the new motor onto the drone.
 
+
+## Week 4/17-4/21
+We've been working on our code all week and we got it the drone running. I also have been trying to make sure that the pico can collect data and make sure that we are completing the rubric for this project. A little helpful advice for the data logger would be to put the "boot.py" code in the actual CIRCUITPY drive and not on VSCode. As it wouldnt actually work and collect data and log it.
+
+## Week 4/24-4/28
+We did some fly testing. We're gonna try to use elastic strings because it might be cool. 
+
+## Week 5/1-5/5
+This week we gonjna test outside because we think we are ready to. It probably wont fly but maybe it will idk.
+
+## Week 5/8-5/12
+Another one of our drone motors died, so I ordered more. While I took it apart I resoldered every connection to make sure that they were stable and it wasnt a wiring problem that they were dying. We also reprinted the drone due to some damage to the frame that happened from the heat gun. While reprinting we also reduced the diameter of the drone motor holders as they were to big. We were using hot glue to hold them in place and were hoping that by reducing the diameter we are able to cut down on hotglue or anysort of glue/tape.
