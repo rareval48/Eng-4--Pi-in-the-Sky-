@@ -252,7 +252,9 @@ We've been working on our code all week and we got it the drone running. I also 
 We did some fly testing. We're gonna try to use elastic strings because it might be cool. 
 
 ## Week 5/1-5/5
-This week we gonjna test outside because we think we are ready to. It probably wont fly but maybe it will idk.
+This week we gonna test outside because we think we are ready to. It probably wont fly but maybe it will idk.
 
 ## Week 5/8-5/12
-Another one of our drone motors died, so I ordered more. While I took it apart I resoldered every connection to make sure that they were stable and it wasnt a wiring problem that they were dying. We also reprinted the drone due to some damage to the frame that happened from the heat gun. While reprinting we also reduced the diameter of the drone motor holders as they were to big. We were using hot glue to hold them in place and were hoping that by reducing the diameter we are able to cut down on hotglue or anysort of glue/tape.
+Another one of our drone motors died, so I ordered more. While I took it apart I resoldered every connection to make sure that they were stable and it wasnt a wiring problem that they were dying. We also reprinted the drone due to some damage to the frame that happened from the heat gun. While reprinting we also reduced the diameter of the drone motor holders as they were to big. We were using hot glue to hold them in place and were hoping that by reducing the diameter we are able to cut down on hotglue or any sort of glue/tape.
+
+While reprinting the drone and waitng for the new motors to arrive we cleaned out or bins to make every important thing that we need easily availible.   
