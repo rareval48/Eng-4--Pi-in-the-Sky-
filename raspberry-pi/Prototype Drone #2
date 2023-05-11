@@ -4,23 +4,25 @@ import board
 import digitalio
 import microcontroller
 import pwmio
+import busio
+import adafruit_mpu6050 as imu
 
 led = digitalio.DigitalInOut(board.LED)
 led.switch_to_output()
 sda_pin = board.GP2
 scl_pin = board.GP3
+i2c = busio.I2C(scl_pin, sda_pin)
+mpu = imu.MPU6050(i2c, address = 0x68)
 
 FRED = 1000
-
-temp = microcontroller.cpu.temperature
+FREQ = 500
 
 motor1_r = pwmio.PWMOut(board.GP17, frequency=FRED)
 motor2_f = pwmio.PWMOut(board.GP18, frequency=FRED)
 motor3_r = pwmio.PWMOut(board.GP19, frequency=FRED)
 motor4_f = pwmio.PWMOut(board.GP20, frequency=FRED)
 
-
-for i in range(110):
+for i in range(225):
     print(i)
     time.sleep(.1)
 
@@ -30,49 +32,24 @@ for i in range(110):
         motor2_f.duty_cycle = 65535
         motor3_r.duty_cycle = 65535
         motor4_f.duty_cycle = 65535
-        try:
-            with open("/data.txt", "a") as datalog:
-                while True:    
-                    datalog.write('{0:f}\n'.format(temp))
-                    datalog.write(str({mpu.acceleration[0]}))
-                    datalog.write(str({mpu.acceleration[1]}))
-                    datalog.write(str({mpu.acceleration[2]}))
-                    datalog.flush()
-                    led.value = not led.value
-
-    if i == 50:
+    if i >= 50:
         print("2nd Phase")
-        motor1_r.duty_cycle = 0
-        motor2_f.duty_cycle = 0
-        motor3_r.duty_cycle = 0
-        motor4_f.duty_cycle = 0
-
-    if i >= 51:
-        print("3nd Phase")
-        motor1_r.duty_cycle = 65535/2
-        motor2_f.duty_cycle = 65535/2
-        motor3_r.duty_cycle = 65535/2
-        motor4_f.duty_cycle = 65535/2
-        try:
-            with open("/data.txt", "a") as datalog: 
-                while True:
-                    datalog.write('{0:f}\n'.format(temp))
-                    datalog.write(str({mpu.acceleration[0]}))
-                    datalog.write(str({mpu.acceleration[1]}))
-                    datalog.write(str({mpu.acceleration[2]}))
-                    datalog.flush()
-                    led.value = not led.value
-
+        motor1_r.duty_cycle = 65535//2
+        motor2_f.duty_cycle = 65535//2
+        motor3_r.duty_cycle = 65535//2
+        motor4_f.duty_cycle = 65535//2
     if i == 100:
-        print("4rd Phase")
+        print("3rd Phase")
         motor1_r.duty_cycle = 0
         motor2_f.duty_cycle = 0
         motor3_r.duty_cycle = 0
         motor4_f.duty_cycle = 0
+        break
 
 try:
     with open("/data.txt", "a") as datalog:
         while True:
+            temp = microcontroller.cpu.temperature
             datalog.write('{0:f}\n'.format(temp))
             datalog.write(str({mpu.acceleration[0]}))
             datalog.write(str({mpu.acceleration[1]}))
