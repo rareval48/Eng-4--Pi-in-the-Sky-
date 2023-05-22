@@ -264,4 +264,5 @@ While reprinting the drone and waitng for the new motors to arrive we cleaned ou
  Below is a picture of the final drone, along with the [final code](https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/Prototype%20Drone%20%233):
  <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/assets/71342195/4fafdefb-c010-4072-9ffa-464ab762da97" width="500px">
  
+ This is  the wiring diagram. Credits go to Paul Schakel for the image as we have the same wiring. <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/Fritzing%20Diagram%20by%20Paul%20Schakel.png">
 
