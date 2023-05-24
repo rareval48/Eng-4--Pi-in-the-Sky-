@@ -262,6 +262,7 @@ While reprinting the drone and waitng for the new motors to arrive we cleaned ou
 ## Week 5/15-5/19
  This week we are doing the final testing and will do the test flight, as we have evidence that the dron collcts data and we have other evidence that the drone actually flies. We also have completed all the essential      editing to our code and drone to make usre that it fits into the requirements for the drone project.
  Below is a picture of the final drone, along with the [final code](https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/Prototype%20Drone%20%233):
+ 
  <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/assets/71342195/4fafdefb-c010-4072-9ffa-464ab762da97" width="500px">
  
  This is  the wiring diagram. Credits go to Paul Schakel for the image as we have the same [wiring](https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/wiring_v3.fzz).
