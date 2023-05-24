@@ -268,7 +268,10 @@ While reprinting the drone and waitng for the new motors to arrive we cleaned ou
  This is  the wiring diagram. Credits go to Paul Schakel for the image as we have the same [wiring](https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/wiring_v3.fzz).
  
  ## Week 5/22-5/26
- We are finally going outside to test our drone. Below is our drone test in a "safe" test environment.
+ We are finally going outside to test our drone. Below is our drone test in a "safe" test environment. While flying it also records data so below I will also provide the data that was collected during the flight.
+ 
  <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/assets/71342195/7e59e1c7-d5d3-4ddd-a467-38944bcfda12">
+ <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/assets/71342195/f82bf956-e289-4439-873e-93f4263ce5d7">
+
 
 
