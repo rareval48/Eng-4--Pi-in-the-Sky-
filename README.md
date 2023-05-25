@@ -100,7 +100,7 @@ while True:
 There isnt much risk involving drones since there isnt any presssure, liquids, or harsh chemicals. The only thing that we would need to watch out for would be the drone blades as there isnt much stopping it from protecting the surroundings. To protect us from the blades we would need to make sure that we arent touching the drone when it takes off or if the blades are spinning at all.
 
 ## Materials
-Some of the materials and supplies that we need are easy to ge as we have them here in the lab. The other supplies would need to be ordered. Here is a list of all of our supplies include: 4 dc coreless motors, circuitboard, accelerometer (MPU6050), battery pack, altimeter (MPL3115A2), GPS module, 2 H-bridges, a powerboost, and 3d printed/lasercut supplies. We would need to buy 4 dc motors and a GPS module. As those are the only things that we dont have in the lab.
+Some of the materials and supplies that we need are easy to ge as we have them here in the lab. The other supplies would need to be ordered. Here is a list of all of our supplies include: 4 dc coreless motors, circuitboard, accelerometer (MPU6050), battery pack, 4 transistors and 3d printed/lasercut supplies. We would need to buy 4 dc motors and a GPS module. As those are the only things that we dont have in the lab.
 
 # Weekly_Progress
 
@@ -110,10 +110,10 @@ This week we ended up redesigning our drone again. Picture provided below. Anoth
 <img src="https://user-images.githubusercontent.com/71342195/212105444-89988bfd-3ccd-4660-9d69-df616c82ad5c.png" width="400px">
 
 ## Week 1/17-1/20
-A four day week really didnt help on our progress as we lost a day that we counld be working. But the days that we were here Spencer re laser cut parts of our drone that were susceptible to breaking from small drops. I've been trying to find information on how to store data on the Raspberry Pi Pico for most of the week. 
+A four day week really didnt help on our progress as we lost a day that we counld be working. But the days that we were here Spencer re-laser cut parts of our drone that were susceptible to breaking from small drops. I've been trying to find information on how to store data on the Raspberry Pi Pico for most of the week. 
 
 ## Week 1/24-1/27
-There hasnt been much progress finnding code for writing, storing, and finding data on the Pico. Stil looking for instructions on how to do that. But Spencer finally perfected the drones stability after multiple lasercuts and hopefully it wont break in the future. . 
+There hasnt been much progress finnding code for writing, storing, and finding data on the Pico. Stil looking for instructions on how to do that. But Spencer finally perfected the drones stability after multiple lasercuts and hopefully it wont break in the future. 
 
 ## Week 1/30-2/3
 We finished soldering all the connections to the board. We also made sure that all connectiuons that we did were in the right position so we didnt have to go back and redo them. The drone motors arrived. So we are waiting for the motor holders to finish printing so that we can finish connecting the motors.
@@ -146,7 +146,7 @@ We finished designing our drone and are 3d printing it out. We have also had som
 We learned that any other mosfet besides IRLB8721 cannot control the current the drone needs to fly. Fortunately we found some more and were able to make more power on the motors.
 
 ## Week 3/20-3/24 
-SPENCER BROKE THE DRONE. We have to reprint with better structures for support to make sure taht the drone doesnt break again. We also edited the diameter for the motor holes. As there was to much room for the drone motors. We also have a basic code setup for the drone to use without transistors. 
+SPENCER BROKE THE DRONE. We have to reprint with better structures for support to make sure that the drone doesnt break again. We also edited the diameter for the motor holes. As there was to much room for the drone motors. We also have a basic code setup for the drone to use without transistors. 
 Example Below:
 
 ```python
