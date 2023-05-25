@@ -257,10 +257,10 @@ This week we gonna test outside because we think we are ready to. It probably wo
 ## Week 5/8-5/12
 Another one of our drone motors died, so I ordered more. While I took it apart I resoldered every connection to make sure that they were stable and it wasnt a wiring problem that they were dying. We also reprinted the drone due to some damage to the frame that happened from the heat gun. While reprinting we also reduced the diameter of the drone motor holders as they were to big. We were using hot glue to hold them in place and were hoping that by reducing the diameter we are able to cut down on hotglue or any sort of glue/tape.
 
-While reprinting the drone and waitng for the new motors to arrive we cleaned out or bins to make every important thing that we need easily availible.   
+While reprinting the drone and waitng for the new motors to arrive we cleaned out our bins to make every important thing that we need easily availible.   
 
 ## Week 5/15-5/19
- This week we are doing the final testing and will do the test flight, as we have evidence that the dron collcts data and we have other evidence that the drone actually flies. We also have completed all the essential      editing to our code and drone to make usre that it fits into the requirements for the drone project.
+ This week we are doing the final testing and will do the test flight, as we have evidence that the drone collcts data and we have other evidence that the drone actually flies. We also have completed all the essential      editing to our code and drone to make usre that it fits into the requirements for the drone project.
  Below is a picture of the final drone, along with the [final code](https://github.com/rareval48/Eng4_Pi_in_the_Sky/blob/main/raspberry-pi/Prototype%20Drone%20%233):
  
  <img src="https://github.com/rareval48/Eng4_Pi_in_the_Sky/assets/71342195/4fafdefb-c010-4072-9ffa-464ab762da97" width="500px">
